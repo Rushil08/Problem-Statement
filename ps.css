@@ -1,0 +1,87 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(./VCR_OSD_MONO_1.001.ttf);
+  }
+
+  @font-face {
+    font-family: pixelFontBold;
+    src: url(./VCR_OSD_MONO_1.001.ttf);
+    font-weight: 900;
+  }
+
+.container
+        {
+            display: grid;
+            height: 50%;
+            grid-template-columns: 9% repeat(11, 3%);
+            grid-template-rows: 40px auto 40px;
+            grid-template-areas: "h h h h h h h h h h h h"
+                                "m c c c c c c c c c c c"
+                                "f f f f f f f f f f f f";
+            grid-gap: 2px;
+            justify-content: center;
+            margin-top: 10%;
+        }
+
+.header{
+    grid-area: h;
+    background-color: D9534F;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 200%;
+}
+
+.menu{
+    background-color: FFAD60;
+    grid-area: m;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 120%;
+}
+
+.content{
+    grid-area: c;
+    background-color: #f7e083;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 150%;
+}
+
+.footer{
+    grid-area: f;
+    background-color: 96CEB4;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 200%;
+}
+
+body{
+    font-family: pixelFont;
+}
+
+p{
+    text-align: center;
+    background-color: #FFEEAD;
+    margin: 15px;
+    border-radius: 7px;
+
+}
+
+ul.test{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.test li a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+ul.test li a:hover {
+    background-color: #e7862b;
+  }
